@@ -24,12 +24,12 @@ jobs:
       # 3️⃣ Build backend image
       - name: Build backend image
         run: |
-          docker build --pull -t ${{ secrets.DOCKERHUB_USERNAME }}/springboot-app ./backend
+          docker build --pull -t ${{ secrets.DOCKERHUB_USERNAME }}/springboot-app ./springboot
 
       # 4️⃣ Build frontend image
       - name: Build frontend image
         run: |
-          docker build --pull -t ${{ secrets.DOCKERHUB_USERNAME }}/angular-app ./frontend
+          docker build --pull -t ${{ secrets.DOCKERHUB_USERNAME }}/angular-app ./angular-appS
 
       # 5️⃣ Push backend image
       - name: Push backend image
